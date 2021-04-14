@@ -1,0 +1,10 @@
+.section1_menu{
+    display:flex;justify-content:space-around;
+    align-items: center;padding:12px;
+    border-bottom:1px solid lightgrey ;flex-wrap: wrap;
+}
+
+.left_section1_menu{
+    display:flex;flex:.3;justify-content: space-evenly;flex-wrap: wrap;
+}
+/* #hr{background-color:grey;height:1px} */
