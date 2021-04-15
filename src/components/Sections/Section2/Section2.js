@@ -22,11 +22,12 @@ function Section2() {
                 
                 <Card className="right_card">
 
-                    <h4 style={{color:"gray"}}>Book A Transfer</h4>
+                   <div style={{paddingBottom:"17px"}}> <h3 style={{color:"gray"}}>Book A Transfer</h3></div>
 
                     <InputTextField input_data="From (airport,port,address)" />
                     <InputTextField input_data="To (airport,port,address)" />
                     <InputTextField2 />
+                  
 
                 </Card>
                

@@ -17,8 +17,12 @@
 #section_component_left{flex:.6;display:flex;
     /* border:2px solid green; */
     flex-wrap: wrap;}
-#section_component_right{flex:.3;justify-content: center;display: flex;padding-top:17px;}
+#section_component_right{flex:.3;justify-content: center;display: flex;padding-top:17px;
+    box-shadow: 
+   }
 
 .right_card{
-    width:290px;height:400px;text-align:center;padding-top:18px;
+    width:290px;height:520px;text-align:center;padding-top:18px;
+  
+ 
 }
