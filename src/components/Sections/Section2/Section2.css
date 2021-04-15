@@ -4,11 +4,13 @@
     flex-wrap: wrap;
     
     padding-top:5% ;
+    
 }
 
 .section2_components{
     /* border:2px solid red; */
     justify-content:center;
+    
 
 }
 
