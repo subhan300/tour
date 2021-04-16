@@ -11,13 +11,14 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+   
   },
   button: {
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(3),
     marginRight: theme.spacing(1),
   },
   actionsContainer: {
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(3),
   },
   resetContainer: {
     padding: theme.spacing(3),
@@ -63,42 +64,57 @@ export default function VerticalLinearStepper() {
   return (
     <div className={classes.root}>
       <Stepper activeStep={activeStep} orientation="vertical">
-        {steps.map((label, index) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
+        {/* {steps.map((label, index) => ( */}
+          <Step>
+          <StepLabel>
+Meeting Point</StepLabel>
             <StepContent>
-              <Typography>{getStepContent(index)}</Typography>
-              <div className={classes.actionsContainer}>
-                <div>
-                  <Button
-                    disabled={activeStep === 0}
-                    onClick={handleBack}
-                    className={classes.button}
-                  >
-                    Back
-                  </Button>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleNext}
-                    className={classes.button}
-                  >
-                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                  </Button>
-                </div>
-              </div>
+            <p>Panepistimo- Athen</p>
             </StepContent>
           </Step>
-        ))}
+
+          <Step>
+            <StepLabel >
+
+     <div style={{marginTop:"30px"}}> 
+     <p style={{fontSize:"21px"}}>   Greek Gods & Philosophers<br></br>
+
+        <span style={{fontSize:"16px"}}>  Walk along the trilogy of buildings representing the Greek Gods and philosophers of Greece</span>
+        
+       
+   </p>
+       
+</div>
+
+</StepLabel>
+         
+          </Step>
+          
+          <Step>
+            <StepLabel >
+
+
+<div>
+<p style={{fontSize:"22px",paddingTop:"100px"}}>
+All About Hermes<br></br>
+<span style={{fontSize:"17px"}}>Stroll along the former street of the stock market and hear the story of God of commerce</span>
+</p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is<br></br> simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting<br></br>industry.
+</div>
+
+
+</StepLabel>
+          
+          </Step>
       </Stepper>
-      {activeStep === steps.length && (
+      {/* {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
           <Typography>All steps completed - you&apos;re finished</Typography>
           <Button onClick={handleReset} className={classes.button}>
             Reset
           </Button>
         </Paper>
-      )}
+      )} */}
     </div>
   );
 }

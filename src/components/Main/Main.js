@@ -8,14 +8,16 @@ import Section4 from "../Sections/Section4/Section4"
 import Section5 from "../Sections/Section5/Section5"
 import Section6 from "../Sections/Section6/Section6"
 import Footer from "../Footer/Footer"
+import P from "../P"
 function Main() {
     return (
-        <div>
+        <div >
             <Header />
             <Banner />
             <Section1  />
+        
             <Section2 />
-            <Section3 />
+            <Section3  />
             <Section4 />
             <Section5 />
             <Section6 />
